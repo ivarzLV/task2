@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Font switcher (aka Task #3)</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+
+        <div class="container main-container col-lg-4 offset-lg-4">
+            <div class="row">
+                <h3 class="text-center container-fluid">Font switcher</h3>
+            </div>
+
+            <div class="row">
+                <form class="w-100">
+                    <div class="form-group">
+                        <select class="form-control font-switcher-select">
+                            <option value=""> --- Select font ---</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control input-preview-font" type="text" placeholder="Type something..." />
+                    </div>
+
+                    <div class="form-group font-preview-cont"></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
